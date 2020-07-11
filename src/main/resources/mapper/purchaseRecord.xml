@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.hg.demo.mapper.PurchaseRecordMapper">
+    <insert id="insertPurchaseRecord">
+        insert into purchase_record (user_id, product_id, price, quantity, sum)
+        values(#{pr.user_id}, #{pr.product_id}, #{pr.price}, #{pr.quantity}, #{pr.sum})
+    </insert>
+</mapper>
